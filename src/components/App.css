@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0%;
+  
+ 
+}
+html{
+  overflow:hidden;
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+}
+header{
+  position: relative;
+  min-height: 35vh;
+  overflow: hidden;
+  max-height: 35vh;
+}
+main{
+  position: relative;
+  font-size: 20px;
+  min-height: 65vh;
+  
+  background-color: white;
+  text-align: center;
+  min-width: 100vh;
+  animation: bg 30s linear infinite;
+  max-height: 65vh;
+  min-width: 100vh;
+}
+
+button, input{
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+  border: 2px black solid;
+  transition: .3s;
+}
+button{
+  cursor: pointer;
+  background-color: white;
+}
+button:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+div.diw{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  min-height: 50vh;
+  min-width: 50vh;
+  border: 2px solid black;
+  text-align: center;
+}
+
+
+
+@keyframes bg {
+  
+  25%{
+    background-color: thistle;
+  }
+  50%{
+    background-color: wheat;
+
+  }
+  75%{
+    background-color: lightpink;
+  }
+  
+}
+
+img.topimg{
+  position: relative;
+  min-width: 100vh;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+  
+  
+}
