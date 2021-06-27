@@ -33,7 +33,7 @@ class App extends Component {
      e.preventDefault()
      console.log(this.state.value)
     console.log(process.env)
-     const api = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid=${key}&units=metric`
+     const api = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid=${key}&units=metric`
      fetch(api)
      .then(response =>{
        if(response.ok){
