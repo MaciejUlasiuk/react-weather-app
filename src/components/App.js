@@ -20,9 +20,7 @@ class App extends Component {
     feelstemp: '',
     city: '',
     date: '',
-    photoref: '',
-    photoname: '',
-    photo: '',
+
    }
    handleInputChange = (e) => {
      this.setState({
@@ -31,9 +29,8 @@ class App extends Component {
    }
    handleFormSubmit = (e) => {
      e.preventDefault()
-     console.log(this.state.value)
-    console.log(process.env)
-     const api = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid=${key}&units=metric`
+     
+     const api = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid=${key}&units=metric` 
      fetch(api)
      .then(response =>{
        if(response.ok){
