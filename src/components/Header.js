@@ -4,11 +4,12 @@ import img2 from '../img/123.jpg';
 import img3 from '../img/1233.jpg';
 import img4 from '../img/img123.jpeg';
 import img5 from '../img/124.jpg'
-const Header = () => {
+const Header = (props) => {
     const tablica = [img1,img2,img3,img4,img5]
-    const random = Math.floor(Math.random()*tablica.length)
+    
     return ( 
-        <header ><img className="topimg" src={tablica[random]} alt={tablica[random]}></img></header>
+        <header ><img className="topimg" src={tablica[props.randomImg]} alt={tablica[props.randomImg]}></img></header>
+        
      );
 }
  

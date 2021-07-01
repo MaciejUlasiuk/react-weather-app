@@ -6,7 +6,7 @@ import Header from './Header';
 
 
 const key = process.env.REACT_APP_API_KEY;
-
+const tablica = [0,1,2,3,4];
 class App extends Component {
   state = { 
     value: '',
@@ -20,6 +20,7 @@ class App extends Component {
     feelstemp: '',
     city: '',
     date: '',
+    randomImg: 0,
 
    }
    handleInputChange = (e) => {
@@ -53,15 +54,17 @@ class App extends Component {
        feelstemp: data.main.feels_like,
        city: data.name,
        date: new Date().toLocaleString(),
+       randomImg: Math.floor(Math.random()*tablica.length),
        
      }))
      .catch(err => console.log(err))
+     
      
    }
   render() { 
     return (
       <>
-      <Header />
+      <Header randomImg={this.state.randomImg}/>
       <Main inputValue={this.handleInputChange} value={this.state.value} state={this.state} handleFormSubmit={this.handleFormSubmit}/>
       
       </>

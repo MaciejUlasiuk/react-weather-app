@@ -22,10 +22,12 @@ main{
   font-size: 20px;
   min-height: 65vh;
   
-  background-color: white;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, yellow, blue );
+  background-size: 400% 400%;
   text-align: center;
   min-width: 100vh;
-  animation: bg 30s linear infinite;
+  animation: bg 20s infinite linear;
+  
   max-height: 65vh;
   min-width: 100vh;
 }
@@ -64,10 +66,10 @@ div.diw{
 @keyframes bg {
   
   25%{
-    background-color: thistle;
+    background-position: 0 50%;
   }
   50%{
-    background-color: wheat;
+    background-position: 100% 100%;
 
   }
   75%{
@@ -88,4 +90,11 @@ img.topimg{
   
   
   
+}
+h2{
+  font-size: 30px;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+ font-size: 20px;
 }
