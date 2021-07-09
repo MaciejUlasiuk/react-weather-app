@@ -24,11 +24,12 @@ const Main = props => {
     return ( 
         <>
         <main>
-            
-            
+      
+
            
-            
         </main>
+        
+        
         <div className="diw">
         <form onSubmit={props.handleFormSubmit}>
                 <input type="text" 
@@ -40,6 +41,8 @@ const Main = props => {
             
             {content}
         </div>
+        
+        
         </>
      );
 }
