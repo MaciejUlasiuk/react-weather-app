@@ -15,6 +15,8 @@ html{
   text-align: center;
   min-width: 100vh;
   animation: bg 20s infinite linear;
+  
+  
 }
 header{
   position: relative;
@@ -30,6 +32,8 @@ button, input{
   font-size: 20px;
   border: 2px black solid;
   transition: .3s;
+  border-radius: 5px;
+  font-family: 'Orbitron', sans-serif;
 }
 button{
   cursor: pointer;
@@ -41,7 +45,7 @@ button:hover {
   border-color: white;
 }
 
-div.diw{
+section.wrapper{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -50,8 +54,12 @@ div.diw{
   
   min-height: 50vh;
   min-width: 50vh;
-  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 2%;
   text-align: center;
+  padding: 20px;
+  font-family: 'Merriweather', serif;
+
 }
 
 
@@ -82,6 +90,7 @@ img.topimg{
   
   
 }
+
 h2{
   font-size: 30px;
 }
@@ -89,3 +98,4 @@ p{
   font-family: 'Roboto', sans-serif;
  font-size: 20px;
 }
+
