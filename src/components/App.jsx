@@ -5,8 +5,7 @@ import Main from "./Main";
 import Header from "./Header";
 
 const key = process.env.REACT_APP_API_KEY;
-const tablica = [0, 1, 2, 3, 4];
-const randomNumber = Math.floor(Math.random() * tablica);
+
 const App = () => {
   const [data, setData] = useState({});
   const [value, setValue] = useState("Warsaw");
@@ -37,7 +36,7 @@ const App = () => {
 
   return (
     <>
-      <Header randomImg={randomNumber} />
+      <Header />
       <Main
         data={data}
         inputValue={handleInputChange}

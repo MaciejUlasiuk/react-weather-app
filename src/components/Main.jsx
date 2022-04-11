@@ -48,6 +48,9 @@ const Section = ({ data }) => {
       <p>
         Wind speed: <strong>{data.wind.speed} km/h </strong>
       </p>
+      <p>
+        Humidity: <strong>{data.main.humidity}</strong>
+      </p>
     </>
   );
 };
